@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Por qué un negocio rentable puede quedarse sin plata — Vértice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:   #0D1B2A;
+    --ivory:  #F7F7F5;
+    --steel:  #8A99A8;
+    --indigo: #2B5BDB;
+    --ink:    #111111;
+    --rule:   #D6DAE0;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--ivory);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .masthead {
+    background: var(--navy);
+    color: var(--ivory);
+    padding: 0 40px;
+  }
+
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }
+
+  .masthead-top a { color: var(--steel); text-decoration: none; }
+
+  .masthead-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--ivory);
+    text-decoration: none;
+  }
+
+  .back-link {
+    color: var(--steel);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--ivory); }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  article {
+    padding: 48px 0 80px;
+  }
+
+  .category-tag {
+    display: inline-block;
+    background: var(--indigo);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--navy);
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+
+  .lede {
+    font-size: 19px;
+    color: #3a4a5a;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    font-weight: 300;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--steel);
+    padding: 20px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 40px;
+  }
+
+  .author-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--indigo);
+    font-weight: 700;
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+
+  .meta-text strong { color: var(--ink); font-weight: 600; }
+  .meta-dot { color: var(--rule); }
+
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 40px 0 16px;
+    letter-spacing: -0.01em;
+  }
+
+  .article-body p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2a3a4a;
+    margin-bottom: 20px;
+  }
+
+  .article-body strong { color: var(--navy); font-weight: 600; }
+
+  .pull-quote {
+    border-left: 3px solid var(--indigo);
+    padding: 4px 0 4px 24px;
+    margin: 36px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--navy);
+    line-height: 1.5;
+  }
+
+  .article-body ul, .article-body ol {
+    margin: 0 0 24px 0;
+    padding-left: 24px;
+  }
+
+  .article-body li {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2a3a4a;
+    margin-bottom: 10px;
+  }
+
+  .article-body li strong { color: var(--navy); }
+
+  .stat-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 32px 0;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid var(--rule);
+  }
+
+  .stat-item { text-align: center; }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--indigo);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--steel);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .author-box {
+    margin-top: 56px;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid var(--rule);
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .author-box .author-avatar {
+    width: 52px;
+    height: 52px;
+    font-size: 18px;
+  }
+
+  .author-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .author-box p {
+    font-size: 14px;
+    color: var(--steel);
+    line-height: 1.6;
+  }
+
+  footer {
+    background: #070f18;
+    color: var(--steel);
+    padding: 32px 40px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 30px; }
+    .lede { font-size: 17px; }
+    .article-body h2 { font-size: 22px; }
+    .article-body p, .article-body li { font-size: 16px; }
+    .masthead, .container { padding-left: 20px; padding-right: 20px; }
+    .author-box { flex-direction: column; }
+    .stat-box { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span>Viernes, 19 de junio de 2026</span>
+    <a href="index.html" class="back-link">← Volver a portada</a>
+  </div>
+  <div class="masthead-main">
+    <a href="index.html" class="logo">Vértice</a>
+  </div>
+</header>
+
+<div class="container">
+  <article>
+    <span class="category-tag">Finanzas · Gestión</span>
+    <h1>Por qué un negocio rentable puede quedarse sin plata</h1>
+    <p class="lede">Tener ganancias en el papel y tener efectivo en la cuenta son dos cosas completamente distintas. Cada año, negocios que facturan bien y crecen terminan cerrando por una sola razón: se quedaron sin dinero para pagar lo que debían pagar, cuando lo debían pagar.</p>
+
+    <div class="article-meta">
+      <div class="author-avatar">AG</div>
+      <div class="meta-text"><strong>Alien Ganga</strong> · Editor</div>
+      <span class="meta-dot">·</span>
+      <span>19 jun 2026</span>
+      <span class="meta-dot">·</span>
+      <span>5 min lectura</span>
+    </div>
+
+    <div class="article-body">
+      <p>Imagina un negocio que vende $500.000 al mes y tiene un margen de ganancia del 30%. En el papel, es un negocio sano. Pero si esos $500.000 los cobra a 60 días y los sueldos, el alquiler y los proveedores hay que pagarlos este viernes, ese negocio rentable puede no tener con qué abrir el lunes. Eso es un problema de flujo de caja, no de rentabilidad — y es la causa de cierre más subestimada entre negocios pequeños y medianos.</p>
+
+      <p>La contabilidad mide si el negocio gana dinero. El flujo de caja mide si el negocio tiene dinero disponible en este momento. Son preguntas distintas, y confundirlas es uno de los errores más comunes de quien arranca un emprendimiento.</p>
+
+      <h2>El desfase que nadie ve venir</h2>
+
+      <p>La mayoría de los negocios que venden a otras empresas (B2B) facturan hoy y cobran en 30, 60 o incluso 90 días. Mientras tanto, los gastos fijos —sueldos, alquiler, insumos— no esperan. Ese período entre "vendí" y "cobré" se llama ciclo de conversión de efectivo, y cuanto más largo es, más capital de trabajo necesita el negocio para sobrevivir mientras espera que le paguen.</p>
+
+      <div class="stat-box">
+        <div class="stat-item">
+          <div class="stat-number">82%</div>
+          <div class="stat-label">de los cierres de pymes citan problemas de flujo de caja</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">60</div>
+          <div class="stat-label">días promedio de espera de cobro en ventas B2B</div>
+        </div>
+      </div>
+
+      <div class="pull-quote">"Revenue is vanity, profit is sanity, but cash is king." — dicho clásico de finanzas corporativas</div>
+
+      <h2>Tres prácticas que evitan el ahogo financiero</h2>
+
+      <ul>
+        <li><strong>Proyectar el flujo de caja a 13 semanas.</strong> No alcanza con mirar el banco hoy. Un calendario simple de ingresos y egresos esperados semana a semana muestra con anticipación en qué momento exacto el saldo puede quedar negativo, dando tiempo para reaccionar antes de que sea una emergencia.</li>
+        <li><strong>Cobrar más rápido de lo que se paga.</strong> Negociar anticipos del 30-50% antes de empezar un trabajo, ofrecer descuentos por pago contado, o facturar por etapas en vez de al final, acorta el ciclo de cobro. Del otro lado, negociar plazos más largos con proveedores —sin abusar de la relación— alivia la presión.</li>
+        <li><strong>Separar la caja operativa de la caja de impuestos.</strong> Un error frecuente es gastar como propio el dinero que en realidad corresponde a IVA o cargas sociales ya cobradas o devengadas. Apartar ese porcentaje en una cuenta separada apenas se recibe el ingreso evita sorpresas en las fechas de vencimiento.</li>
+      </ul>
+
+      <h2>La trampa del crecimiento acelerado</h2>
+
+      <p>Paradójicamente, crecer rápido puede ahogar a un negocio más que estancarse. Cada nuevo cliente grande significa más insumos a comprar por adelantado, más gente a contratar, más gastos hoy — para cobrar recién dentro de dos meses. Las empresas que mueren de éxito son más comunes de lo que parece: el problema no fue vender de más, fue no tener el colchón de caja necesario para financiar ese crecimiento mientras llegaban los cobros.</p>
+
+      <p>Antes de aceptar ese pedido grande que duplica la facturación, vale la pena hacer una pregunta simple: ¿tengo el efectivo para sostener la operación durante el tiempo que voy a tardar en cobrar? Si la respuesta es no, hay que negociar un anticipo, conseguir una línea de crédito a tiempo, o crecer un poco más despacio.</p>
+
+      <h2>El hábito que separa a los que sobreviven</h2>
+
+      <p>Los negocios que atraviesan los primeros años no son necesariamente los que más venden, sino los que mejor entienden cuándo entra y cuándo sale el dinero. Revisar el flujo de caja no es una tarea de fin de mes para el contador — es un hábito semanal de quien toma las decisiones, tan importante como mirar las ventas.</p>
+    </div>
+
+    <div class="author-box">
+      <div class="author-avatar">AG</div>
+      <div>
+        <h3>Alien Ganga</h3>
+        <p>Editor de Vértice. Escribe sobre emprendimiento, estrategia y las decisiones que separan a las startups que sobreviven de las que no.</p>
+      </div>
+    </div>
+  </article>
+</div>
+
+<footer>
+  © 2026 Vértice Media. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>

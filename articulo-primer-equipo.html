@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Los errores más caros al armar tu primer equipo — Vértice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:   #0D1B2A;
+    --ivory:  #F7F7F5;
+    --steel:  #8A99A8;
+    --indigo: #2B5BDB;
+    --ink:    #111111;
+    --rule:   #D6DAE0;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--ivory);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .masthead {
+    background: var(--navy);
+    color: var(--ivory);
+    padding: 0 40px;
+  }
+
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }
+
+  .masthead-top a { color: var(--steel); text-decoration: none; }
+
+  .masthead-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--ivory);
+    text-decoration: none;
+  }
+
+  .back-link {
+    color: var(--steel);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--ivory); }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  article {
+    padding: 48px 0 80px;
+  }
+
+  .category-tag {
+    display: inline-block;
+    background: var(--indigo);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--navy);
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+
+  .lede {
+    font-size: 19px;
+    color: #3a4a5a;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    font-weight: 300;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--steel);
+    padding: 20px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 40px;
+  }
+
+  .author-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--indigo);
+    font-weight: 700;
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+
+  .meta-text strong { color: var(--ink); font-weight: 600; }
+  .meta-dot { color: var(--rule); }
+
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 40px 0 16px;
+    letter-spacing: -0.01em;
+  }
+
+  .article-body p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2a3a4a;
+    margin-bottom: 20px;
+  }
+
+  .article-body strong { color: var(--navy); font-weight: 600; }
+
+  .pull-quote {
+    border-left: 3px solid var(--indigo);
+    padding: 4px 0 4px 24px;
+    margin: 36px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--navy);
+    line-height: 1.5;
+  }
+
+  .article-body ul, .article-body ol {
+    margin: 0 0 24px 0;
+    padding-left: 24px;
+  }
+
+  .article-body li {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2a3a4a;
+    margin-bottom: 10px;
+  }
+
+  .article-body li strong { color: var(--navy); }
+
+  .stat-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 32px 0;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid var(--rule);
+  }
+
+  .stat-item { text-align: center; }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--indigo);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--steel);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .author-box {
+    margin-top: 56px;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid var(--rule);
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .author-box .author-avatar {
+    width: 52px;
+    height: 52px;
+    font-size: 18px;
+  }
+
+  .author-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .author-box p {
+    font-size: 14px;
+    color: var(--steel);
+    line-height: 1.6;
+  }
+
+  footer {
+    background: #070f18;
+    color: var(--steel);
+    padding: 32px 40px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 30px; }
+    .lede { font-size: 17px; }
+    .article-body h2 { font-size: 22px; }
+    .article-body p, .article-body li { font-size: 16px; }
+    .masthead, .container { padding-left: 20px; padding-right: 20px; }
+    .author-box { flex-direction: column; }
+    .stat-box { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span>Viernes, 19 de junio de 2026</span>
+    <a href="index.html" class="back-link">← Volver a portada</a>
+  </div>
+  <div class="masthead-main">
+    <a href="index.html" class="logo">Vértice</a>
+  </div>
+</header>
+
+<div class="container">
+  <article>
+    <span class="category-tag">Liderazgo · Equipos</span>
+    <h1>Los errores más caros al armar tu primer equipo</h1>
+    <p class="lede">Contratar a la primera persona es uno de los momentos más delicados de cualquier negocio que recién despega. Una mala decisión ahí no solo cuesta el sueldo: cuesta meses de tiempo, energía y, muchas veces, la cultura que se intentaba construir desde el principio.</p>
+
+    <div class="article-meta">
+      <div class="author-avatar">AG</div>
+      <div class="meta-text"><strong>Alien Ganga</strong> · Editor</div>
+      <span class="meta-dot">·</span>
+      <span>19 jun 2026</span>
+      <span class="meta-dot">·</span>
+      <span>5 min lectura</span>
+    </div>
+
+    <div class="article-body">
+      <p>Pasar de trabajar solo a tener a alguien más involucrado en el negocio cambia todo: las decisiones dejan de tomarse en la cabeza de una sola persona, la comunicación se vuelve un proceso en sí mismo, y los errores de contratación —que en una empresa grande se diluyen entre cientos de personas— en un equipo de dos o tres pesan muchísimo más. Estos son los errores que más se repiten.</p>
+
+      <h2>Contratar por urgencia en lugar de por necesidad real</h2>
+
+      <p>El error más común es contratar cuando ya no se da abasto, en lugar de planificar la incorporación con anticipación. Bajo presión, se eligen candidatos disponibles en vez de candidatos adecuados, y se salta el proceso de evaluación que en otro momento se hubiera hecho con más cuidado. El resultado típico es una persona que cubre el puesto sobre el papel, pero que no encaja con lo que el negocio realmente necesita seis meses después.</p>
+
+      <div class="pull-quote">"Contrata lento, despide rápido." — principio clásico de gestión de equipos en startups</div>
+
+      <h2>Buscar un clon de uno mismo</h2>
+
+      <p>Es tentador buscar a alguien que piense exactamente igual que el fundador. Pero un equipo de clones tiene los mismos puntos ciegos multiplicados. Lo que realmente fortalece a un equipo chico es la complementariedad: alguien fuerte en lo operativo si el fundador es fuerte en lo comercial, alguien meticuloso si el fundador es más de improvisar. Las fricciones sanas, manejadas con respeto, generan mejores decisiones que el acuerdo automático.</p>
+
+      <h2>No definir el rol antes de buscar a la persona</h2>
+
+      <ul>
+        <li><strong>Publicar una búsqueda vaga.</strong> "Necesito ayuda con todo" atrae candidatos que tampoco saben bien qué están aplicando, y genera expectativas desalineadas desde el día uno.</li>
+        <li><strong>No aclarar qué significa éxito en el puesto.</strong> Sin objetivos concretos para los primeros 30, 60 y 90 días, ni la persona contratada ni quien la contrató tienen forma de saber si la incorporación está funcionando.</li>
+        <li><strong>Improvisar el proceso de selección.</strong> Una sola charla informal rara vez revela cómo trabaja alguien bajo presión. Una prueba práctica corta y relevante al puesto —aunque sea pequeña— predice mucho mejor el desempeño real que la simpatía en una entrevista.</li>
+      </ul>
+
+      <h2>Demorar la conversación difícil</h2>
+
+      <p>Cuando algo no funciona con la primera contratación, la reacción natural es postergar la conversación incómoda con la esperanza de que mejore solo. En equipos chicos, ese costo se siente rápido: un desempeño bajo o una mala actitud afecta de forma desproporcionada cuando solo hay dos o tres personas trabajando juntas todos los días. Dar feedback directo y temprano —antes de que el problema se vuelva una crisis— es más sano para ambas partes que esperar al límite.</p>
+
+      <h2>Subestimar la cultura porque "somos pocos"</h2>
+
+      <p>Existe la creencia de que la cultura de empresa es algo que se define cuando el equipo ya es grande. En realidad, los hábitos que se instalan con las dos o tres primeras personas son los que después se heredan a toda contratación futura. Cómo se comunican los desacuerdos, cómo se reconoce el buen trabajo, cómo se manejan los errores — todo eso se define mucho antes de tener un área de Recursos Humanos, y es muchísimo más difícil de corregir después que de construir bien desde el principio.</p>
+
+      <p>Armar el primer equipo no es solo sumar manos para repartir trabajo. Es definir, con cada decisión de contratación, qué tipo de negocio se está construyendo y qué se va a tolerar o no en el camino.</p>
+    </div>
+
+    <div class="author-box">
+      <div class="author-avatar">AG</div>
+      <div>
+        <h3>Alien Ganga</h3>
+        <p>Editor de Vértice. Escribe sobre emprendimiento, estrategia y las decisiones que separan a las startups que sobreviven de las que no.</p>
+      </div>
+    </div>
+  </article>
+</div>
+
+<footer>
+  © 2026 Vértice Media. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>

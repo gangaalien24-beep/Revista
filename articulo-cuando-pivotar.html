@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cómo saber si es momento de cambiar de rumbo el negocio — Vértice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:   #0D1B2A;
+    --ivory:  #F7F7F5;
+    --steel:  #8A99A8;
+    --indigo: #2B5BDB;
+    --ink:    #111111;
+    --rule:   #D6DAE0;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--ivory);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .masthead {
+    background: var(--navy);
+    color: var(--ivory);
+    padding: 0 40px;
+  }
+
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }
+
+  .masthead-top a { color: var(--steel); text-decoration: none; }
+
+  .masthead-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--ivory);
+    text-decoration: none;
+  }
+
+  .back-link {
+    color: var(--steel);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--ivory); }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  article {
+    padding: 48px 0 80px;
+  }
+
+  .category-tag {
+    display: inline-block;
+    background: var(--indigo);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--navy);
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+
+  .lede {
+    font-size: 19px;
+    color: #3a4a5a;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    font-weight: 300;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--steel);
+    padding: 20px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 40px;
+  }
+
+  .author-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--indigo);
+    font-weight: 700;
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+
+  .meta-text strong { color: var(--ink); font-weight: 600; }
+  .meta-dot { color: var(--rule); }
+
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 40px 0 16px;
+    letter-spacing: -0.01em;
+  }
+
+  .article-body p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2a3a4a;
+    margin-bottom: 20px;
+  }
+
+  .article-body strong { color: var(--navy); font-weight: 600; }
+
+  .pull-quote {
+    border-left: 3px solid var(--indigo);
+    padding: 4px 0 4px 24px;
+    margin: 36px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--navy);
+    line-height: 1.5;
+  }
+
+  .article-body ul, .article-body ol {
+    margin: 0 0 24px 0;
+    padding-left: 24px;
+  }
+
+  .article-body li {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2a3a4a;
+    margin-bottom: 10px;
+  }
+
+  .article-body li strong { color: var(--navy); }
+
+  .stat-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 32px 0;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid var(--rule);
+  }
+
+  .stat-item { text-align: center; }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--indigo);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--steel);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .author-box {
+    margin-top: 56px;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid var(--rule);
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .author-box .author-avatar {
+    width: 52px;
+    height: 52px;
+    font-size: 18px;
+  }
+
+  .author-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .author-box p {
+    font-size: 14px;
+    color: var(--steel);
+    line-height: 1.6;
+  }
+
+  footer {
+    background: #070f18;
+    color: var(--steel);
+    padding: 32px 40px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 30px; }
+    .lede { font-size: 17px; }
+    .article-body h2 { font-size: 22px; }
+    .article-body p, .article-body li { font-size: 16px; }
+    .masthead, .container { padding-left: 20px; padding-right: 20px; }
+    .author-box { flex-direction: column; }
+    .stat-box { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span>Viernes, 19 de junio de 2026</span>
+    <a href="index.html" class="back-link">← Volver a portada</a>
+  </div>
+  <div class="masthead-main">
+    <a href="index.html" class="logo">Vértice</a>
+  </div>
+</header>
+
+<div class="container">
+  <article>
+    <span class="category-tag">Estrategia · Decisiones</span>
+    <h1>Cómo saber si es momento de cambiar de rumbo el negocio</h1>
+    <p class="lede">Insistir y rendirse parecen opuestos, pero el verdadero desafío de cualquier negocio es distinguir cuándo cada uno es la decisión correcta. Cambiar de rumbo a tiempo —lo que en el mundo emprendedor se llama "pivotar"— suele ser más un acto de disciplina que de fracaso.</p>
+
+    <div class="article-meta">
+      <div class="author-avatar">AG</div>
+      <div class="meta-text"><strong>Alien Ganga</strong> · Editor</div>
+      <span class="meta-dot">·</span>
+      <span>19 jun 2026</span>
+      <span class="meta-dot">·</span>
+      <span>5 min lectura</span>
+    </div>
+
+    <div class="article-body">
+      <p>Existe una tensión constante en cualquier negocio: la perseverancia que se necesita para superar las dificultades normales de cualquier proyecto, contra la honestidad que se necesita para reconocer cuando el camino elegido simplemente no funciona. Confundir una cosa con la otra es costoso en ambas direcciones — rendirse demasiado pronto frente a un obstáculo superable, o insistir demasiado tiempo en algo que el mercado ya respondió que no quiere.</p>
+
+      <h2>Qué es exactamente un pivot</h2>
+
+      <p>Pivotar no significa abandonar el negocio. Significa cambiar un elemento central de la estrategia —el producto, el público objetivo, el modelo de ingresos o el canal de venta— mientras se conserva el aprendizaje acumulado hasta ese momento. Muchas empresas reconocidas hoy empezaron resolviendo un problema completamente distinto al que terminaron resolviendo: el pivot no es la excepción en los negocios exitosos, es bastante más común de lo que parece desde afuera.</p>
+
+      <div class="pull-quote">"Un pivot es un cambio de rumbo estructurado diseñado para probar una nueva hipótesis fundamental." — Eric Ries, autor de The Lean Startup</div>
+
+      <h2>Señales de que es momento de revisar el rumbo</h2>
+
+      <ul>
+        <li><strong>El crecimiento se estancó a pesar de buena ejecución.</strong> Cuando el equipo ejecuta bien, la calidad es alta, pero las métricas clave —ventas, retención, interés— no se mueven durante varios meses consecutivos, el problema probablemente no es de ejecución sino de encaje entre el producto y el mercado.</li>
+        <li><strong>El cliente usa el producto de una forma distinta a la planeada.</strong> Cuando los usuarios encuentran y aprovechan una función secundaria mucho más que la función principal pensada originalmente, suele ser una señal de hacia dónde está realmente la oportunidad.</li>
+        <li><strong>El costo de conseguir un cliente supera lo que ese cliente deja.</strong> Si conseguir cada nueva venta cuesta sistemáticamente más de lo que esa venta genera, ningún volumen adicional arregla el problema — hace falta repensar el modelo, no solo vender más fuerte.</li>
+        <li><strong>La energía del equipo está en otro lado.</strong> Cuando el entusiasmo genuino, tanto interno como de los primeros usuarios, aparece consistentemente alrededor de un ángulo distinto al planeado originalmente, vale la pena prestarle atención en lugar de ignorarlo por apego al plan inicial.</li>
+      </ul>
+
+      <h2>La diferencia entre un mal mes y una mala dirección</h2>
+
+      <p>Un error común es reaccionar a corto plazo: un mes flojo de ventas no es necesariamente evidencia de que el negocio entero está mal orientado. La clave está en mirar tendencias sostenidas en el tiempo, no datos puntuales, y en distinguir entre problemas de ejecución (se puede mejorar el cómo) y problemas de validación (el mercado está respondiendo que el qué no le interesa, sin importar cuánto se mejore el cómo).</p>
+
+      <h2>Pivotar no es empezar de cero</h2>
+
+      <p>Lo que hace valioso un pivot bien hecho es que conserva lo aprendido: quién es el cliente, qué problema realmente le importa, qué canales funcionan para llegar a él. Cambiar de rumbo manteniendo ese aprendizaje es radicalmente distinto a cerrar un proyecto y arrancar uno nuevo desde la nada. El tiempo invertido en la versión anterior no se pierde — se convierte en la base de información que hace que la nueva dirección tenga más probabilidades de funcionar.</p>
+
+      <p>La pregunta que conviene hacerse periódicamente no es "¿debería rendirme?" sino "¿qué me está diciendo el mercado que todavía no quise escuchar?". Esa pregunta, respondida con honestidad, suele señalar con bastante claridad si el camino es insistir o pivotar.</p>
+    </div>
+
+    <div class="author-box">
+      <div class="author-avatar">AG</div>
+      <div>
+        <h3>Alien Ganga</h3>
+        <p>Editor de Vértice. Escribe sobre emprendimiento, estrategia y las decisiones que separan a las startups que sobreviven de las que no.</p>
+      </div>
+    </div>
+  </article>
+</div>
+
+<footer>
+  © 2026 Vértice Media. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>

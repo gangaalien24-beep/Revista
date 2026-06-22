@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cómo conseguir tus primeros 10 clientes sin gastar en publicidad — Vértice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:   #0D1B2A;
+    --ivory:  #F7F7F5;
+    --steel:  #8A99A8;
+    --indigo: #2B5BDB;
+    --ink:    #111111;
+    --rule:   #D6DAE0;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--ivory);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .masthead {
+    background: var(--navy);
+    color: var(--ivory);
+    padding: 0 40px;
+  }
+
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }
+
+  .masthead-top a { color: var(--steel); text-decoration: none; }
+
+  .masthead-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--ivory);
+    text-decoration: none;
+  }
+
+  .back-link {
+    color: var(--steel);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--ivory); }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  article {
+    padding: 48px 0 80px;
+  }
+
+  .category-tag {
+    display: inline-block;
+    background: var(--indigo);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--navy);
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+  }
+
+  .lede {
+    font-size: 19px;
+    color: #3a4a5a;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    font-weight: 300;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--steel);
+    padding: 20px 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 40px;
+  }
+
+  .author-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--indigo);
+    font-weight: 700;
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+
+  .meta-text strong { color: var(--ink); font-weight: 600; }
+  .meta-dot { color: var(--rule); }
+
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 40px 0 16px;
+    letter-spacing: -0.01em;
+  }
+
+  .article-body p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2a3a4a;
+    margin-bottom: 20px;
+  }
+
+  .article-body strong { color: var(--navy); font-weight: 600; }
+
+  .pull-quote {
+    border-left: 3px solid var(--indigo);
+    padding: 4px 0 4px 24px;
+    margin: 36px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--navy);
+    line-height: 1.5;
+  }
+
+  .article-body ul, .article-body ol {
+    margin: 0 0 24px 0;
+    padding-left: 24px;
+  }
+
+  .article-body li {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2a3a4a;
+    margin-bottom: 10px;
+  }
+
+  .article-body li strong { color: var(--navy); }
+
+  .stat-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 32px 0;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid var(--rule);
+  }
+
+  .stat-item { text-align: center; }
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--indigo);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: var(--steel);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .author-box {
+    margin-top: 56px;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid var(--rule);
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+
+  .author-box .author-avatar {
+    width: 52px;
+    height: 52px;
+    font-size: 18px;
+  }
+
+  .author-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+
+  .author-box p {
+    font-size: 14px;
+    color: var(--steel);
+    line-height: 1.6;
+  }
+
+  footer {
+    background: #070f18;
+    color: var(--steel);
+    padding: 32px 40px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 30px; }
+    .lede { font-size: 17px; }
+    .article-body h2 { font-size: 22px; }
+    .article-body p, .article-body li { font-size: 16px; }
+    .masthead, .container { padding-left: 20px; padding-right: 20px; }
+    .author-box { flex-direction: column; }
+    .stat-box { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <span>Viernes, 19 de junio de 2026</span>
+    <a href="index.html" class="back-link">← Volver a portada</a>
+  </div>
+  <div class="masthead-main">
+    <a href="index.html" class="logo">Vértice</a>
+  </div>
+</header>
+
+<div class="container">
+  <article>
+    <span class="category-tag">Marketing · Ventas</span>
+    <h1>Cómo conseguir tus primeros 10 clientes sin gastar en publicidad</h1>
+    <p class="lede">Antes de tener presupuesto para anuncios, todo negocio nuevo enfrenta el mismo problema: cómo conseguir a alguien que pague, sin tener marca, sin tener reseñas y sin tener historial. La buena noticia es que los primeros clientes casi nunca llegan por publicidad — llegan por trabajo manual, directo y poco escalable.</p>
+
+    <div class="article-meta">
+      <div class="author-avatar">AG</div>
+      <div class="meta-text"><strong>Alien Ganga</strong> · Editor</div>
+      <span class="meta-dot">·</span>
+      <span>19 jun 2026</span>
+      <span class="meta-dot">·</span>
+      <span>5 min lectura</span>
+    </div>
+
+    <div class="article-body">
+      <p>Hay una idea instalada de que conseguir clientes requiere presupuesto: anuncios en redes, campañas de Google Ads, influencers. Para un negocio recién nacido, sin caja y sin historial, esa no es la realidad. Los primeros clientes —los que realmente importan, los que validan que el negocio funciona— casi siempre se consiguen de formas que no escalan pero que tampoco cuestan dinero: conversaciones uno a uno, recomendaciones y presencia activa en los lugares correctos.</p>
+
+      <h2>Por qué la publicidad paga falla al principio</h2>
+
+      <p>Pagar por anuncios antes de tener el mensaje, el precio y el cliente ideal bien definidos es, en la mayoría de los casos, quemar dinero más rápido de lo que se aprende. Sin datos previos de qué funciona, una campaña paga es una apuesta cara. Lo que sí funciona al principio es algo más lento pero infinitamente más barato: hablar directamente con las personas que podrían necesitar lo que ofreces.</p>
+
+      <div class="pull-quote">"Haz cosas que no escalan." — Paul Graham, cofundador de Y Combinator</div>
+
+      <h2>Cuatro canales que no cuestan dinero</h2>
+
+      <ul>
+        <li><strong>La red de contactos directa.</strong> Antes de buscar desconocidos, vale la pena agotar el círculo cercano: excompañeros de trabajo, contactos de LinkedIn, conocidos de conocidos. No para venderles a ellos, sino para preguntarles si conocen a alguien con el problema que resuelves. Una sola introducción cálida vale más que cien mensajes fríos.</li>
+        <li><strong>Comunidades donde ya está tu cliente.</strong> Grupos de Facebook, foros, canales de Discord o Slack de un nicho específico reúnen exactamente al público que buscas, ya agrupado por interés. Participar de forma genuina —respondiendo preguntas, sin vender directamente— construye reputación antes de pedir nada a cambio.</li>
+        <li><strong>Contenido útil y consistente.</strong> Publicar en LinkedIn o redes sobre el problema que resuelves, sin pedir nada a cambio, atrae con el tiempo a quienes tienen exactamente ese problema. Esto exige paciencia: el resultado no es inmediato, pero compone con cada publicación.</li>
+        <li><strong>El mensaje directo bien hecho.</strong> Escribir a un prospecto específico, mencionando algo concreto sobre su situación y ofreciendo ayuda real —no un discurso de venta genérico— tiene una tasa de respuesta muchísimo más alta que cualquier anuncio masivo.</li>
+      </ul>
+
+      <h2>El verdadero trabajo: la conversación, no el mensaje</h2>
+
+      <p>El error más común al hacer outreach manual es tratarlo como un email masivo personalizado a mano. La diferencia entre que alguien responda o ignore el mensaje está en si se nota que fue escrito pensando específicamente en esa persona. Mencionar un proyecto reciente, un comentario que hizo, una situación particular de su negocio — eso es lo que convierte un mensaje en una conversación.</p>
+
+      <p>Diez conversaciones reales y bien dirigidas valen más que mil impresiones de un anuncio que nadie recuerda. El objetivo de estos primeros clientes no es solo la venta en sí, sino el aprendizaje: qué objeciones aparecen, qué palabras usan para describir el problema, qué los convence finalmente a decir que sí.</p>
+
+      <h2>Pedir la recomendación, no esperarla</h2>
+
+      <p>Una vez que el primer cliente está satisfecho, el canal más subutilizado es simplemente preguntar: "¿conocés a alguien más que podría necesitar esto?". La mayoría de los negocios espera pasivamente a que el boca a boca ocurra solo, cuando en realidad basta con pedirlo de forma directa en el momento correcto —justo después de haber entregado un buen resultado— para activar una cadena de referidos sin gastar nada.</p>
+
+      <p>Conseguir clientes sin presupuesto no es gratis en el sentido literal: cuesta tiempo, cuesta rechazo, cuesta organización. Pero es la base sobre la que después se puede construir cualquier estrategia paga, porque ya se sabe qué mensaje funciona y a quién dirigirlo.</p>
+    </div>
+
+    <div class="author-box">
+      <div class="author-avatar">AG</div>
+      <div>
+        <h3>Alien Ganga</h3>
+        <p>Editor de Vértice. Escribe sobre emprendimiento, estrategia y las decisiones que separan a las startups que sobreviven de las que no.</p>
+      </div>
+    </div>
+  </article>
+</div>
+
+<footer>
+  © 2026 Vértice Media. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>

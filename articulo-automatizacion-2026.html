@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Automatizar mejor, no automatizar más — Vértice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * , *::before, *::after { box-sizing: border-box; }
+
+  :root {
+    --navy:   #0D1B2A;
+    --ivory:  #F7F7F5;
+    --steel:  #8A99A8;
+    --indigo: #2B5BDB;
+    --ink:    #111111;
+    --rule:   #D6DAE0;
+    --gold:   #B8860B;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: var(--ivory);
+    line-height: 1.65;
+  }
+
+  .top-nav {
+    background: var(--navy);
+    padding: 18px 20px;
+  }
+
+  .top-nav a {
+    color: var(--ivory);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .article-header {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 20px 0 20px;
+  }
+
+  .article-category {
+    color: var(--indigo);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .article-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--navy);
+    margin: 14px 0 18px 0;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--steel);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .article-meta strong {
+    color: var(--ink);
+  }
+
+  .featured-img-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .featured-img-wrap img {
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .img-caption {
+    font-size: 13px;
+    color: var(--steel);
+    font-style: italic;
+    margin-top: 8px;
+  }
+
+  .article-body {
+    max-width: 720px;
+    margin: 36px auto;
+    padding: 0 20px;
+    font-size: 1.08rem;
+  }
+
+  .article-body p {
+    margin-bottom: 22px;
+  }
+
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 8px;
+    display: inline-block;
+  }
+
+  .inline-img-wrap {
+    margin: 32px 0;
+  }
+
+  .inline-img-wrap img {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .pull-quote {
+    border-left: 4px solid var(--indigo);
+    padding: 6px 24px;
+    margin: 32px 0;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--navy);
+  }
+
+  .back-link {
+    display: inline-block;
+    margin: 20px 0 60px 0;
+    color: var(--indigo);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .back-link-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  footer {
+    background: var(--navy);
+    color: var(--steel);
+    text-align: center;
+    padding: 28px 20px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a href="index.html">← Vértice — Revista de Negocios</a>
+</nav>
+
+<header class="article-header">
+  <p class="article-category">Tecnología</p>
+  <h1 class="article-title">Automatizar mejor, no automatizar más: el nuevo enfoque de las empresas en 2026</h1>
+  <div class="article-meta">
+    <span><strong>Alien Ganga</strong></span>
+    <span>·</span>
+    <span>8 jul 2026</span>
+    <span>·</span>
+    <span>5 min lectura</span>
+  </div>
+</header>
+
+<figure class="featured-img-wrap">
+  <img src="NOMBRE-IMAGEN-PRINCIPAL.jpg" alt="Automatización empresarial y tecnología en 2026">
+  <figcaption class="img-caption">Ilustración: Redacción Vértice</figcaption>
+</figure>
+
+<article class="article-body">
+
+  <p>Durante años, automatizar significó una sola cosa: reemplazar tareas manuales por máquinas que hicieran lo mismo, más rápido. En 2026, ese enfoque quedó atrás. Las empresas que hoy lideran sus sectores no son las que más invirtieron en tecnología, sino las que primero rediseñaron cómo debería funcionar un proceso, y recién después dejaron que los sistemas lo ejecutaran.</p>
+
+  <p>Gartner proyecta que el mercado de hiperautomatización alcanzará los 1,04 billones de dólares este año, con un crecimiento anual cercano al 12%. Pero el dato más revelador no es el tamaño del mercado, sino un hallazgo de McKinsey tras analizar más de 50 implementaciones exitosas: las organizaciones que realmente obtienen valor no intentan automatizar exactamente lo que hoy hace una persona. En cambio, rediseñan el proceso completo, definiendo qué decisiones pueden estandarizarse y cuáles todavía necesitan criterio humano.</p>
+
+  <h2>De chatbots a agentes autónomos</h2>
+
+  <p>La evolución más visible está en la atención al cliente. Los asistentes virtuales que respondían preguntas simples están dando paso a agentes de inteligencia artificial capaces de gestionar procesos completos: desde generar una factura hasta hacer seguimiento de cobros atrasados, sin supervisión constante.</p>
+
+  <div class="inline-img-wrap">
+    <img src="NOMBRE-IMAGEN-SECUNDARIA.jpg" alt="Agentes de inteligencia artificial en procesos empresariales">
+  </div>
+
+  <p>Los casos documentados muestran resultados concretos. Una empresa mexicana redujo un 35% sus costos de soporte con un agente que resuelve el 70% de las consultas de primer contacto, sin intervención humana en la mayoría de los casos.</p>
+
+  <blockquote class="pull-quote">
+    "La pregunta ya no es si una empresa debería usar inteligencia artificial, sino qué procesos específicos automatizar primero."
+  </blockquote>
+
+  <h2>La democratización del "no-code"</h2>
+
+  <p>Otro cambio central: ya no hace falta un equipo de programadores para automatizar procesos básicos. Las plataformas low-code y no-code permiten que cualquier área de negocio —no solo los departamentos técnicos— cree sus propios flujos automatizados. Gartner estima que para este año, el 80% de los usuarios de estas herramientas trabajará fuera de IT.</p>
+
+  <p>La contracara es real: sin coordinación entre equipos, esta facilidad puede generar automatizaciones dispersas que terminan sumando caos operativo en lugar de eficiencia.</p>
+
+  <h2>Lo que viene: automatización con criterio</h2>
+
+  <p>La pregunta que hoy se hacen las empresas ya no es si deben automatizar, sino qué procesos automatizar primero y con qué nivel de autonomía. Menos del 15% de las compañías activó funciones de decisión completamente autónoma en sus sistemas — la mayoría todavía prefiere procesos donde cada paso queda claramente definido, priorizando el control por sobre la velocidad.</p>
+
+  <p>Para las pequeñas y medianas empresas, el mensaje es claro: no hace falta adoptar todo a la vez. El camino más efectivo sigue siendo el mismo de siempre — identificar el proceso repetitivo que más tiempo consume, automatizarlo primero, medir el resultado, y recién entonces escalar.</p>
+
+</article>
+
+<div class="back-link-wrap">
+  <a href="index.html" class="back-link">← Volver a Vértice</a>
+</div>
+
+<footer>
+  &copy; 2026 Vértice — Revista de Negocios &amp; Estrategia
+</footer>
+
+</body>
+</html>

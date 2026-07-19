@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Delegar sin perder el control: guía para el primer equipo — Vértice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * , *::before, *::after { box-sizing: border-box; }
+
+  :root {
+    --navy:   #0D1B2A;
+    --ivory:  #F7F7F5;
+    --steel:  #8A99A8;
+    --indigo: #2B5BDB;
+    --ink:    #111111;
+    --rule:   #D6DAE0;
+    --gold:   #B8860B;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: var(--ivory);
+    line-height: 1.65;
+  }
+
+  .top-nav {
+    background: var(--navy);
+    padding: 18px 20px;
+  }
+
+  .top-nav a {
+    color: var(--ivory);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .article-header {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 20px 0 20px;
+  }
+
+  .article-category {
+    color: var(--indigo);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .article-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--navy);
+    margin: 14px 0 18px 0;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--steel);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .article-meta strong {
+    color: var(--ink);
+  }
+
+  .featured-img-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .featured-img-wrap img {
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .img-caption {
+    font-size: 13px;
+    color: var(--steel);
+    font-style: italic;
+    margin-top: 8px;
+  }
+
+  .article-body {
+    max-width: 720px;
+    margin: 36px auto;
+    padding: 0 20px;
+    font-size: 1.08rem;
+  }
+
+  .article-body p {
+    margin-bottom: 22px;
+  }
+
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 8px;
+    display: inline-block;
+  }
+
+  .inline-img-wrap {
+    margin: 32px 0;
+  }
+
+  .inline-img-wrap img {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .pull-quote {
+    border-left: 4px solid var(--indigo);
+    padding: 6px 24px;
+    margin: 32px 0;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--navy);
+  }
+
+  .back-link {
+    display: inline-block;
+    margin: 20px 0 60px 0;
+    color: var(--indigo);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .back-link-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  footer {
+    background: var(--navy);
+    color: var(--steel);
+    text-align: center;
+    padding: 28px 20px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a href="index.html">← Vértice — Revista de Negocios</a>
+</nav>
+
+<header class="article-header">
+  <p class="article-category">Liderazgo</p>
+  <h1 class="article-title">Delegar sin perder el control: guía para el primer equipo</h1>
+  <div class="article-meta">
+    <span><strong>Alien Ganga</strong></span>
+    <span>·</span>
+    <span>17 jul 2026</span>
+    <span>·</span>
+    <span>6 min lectura</span>
+  </div>
+</header>
+
+<figure class="featured-img-wrap">
+  <img src="delegar-equipo-emprendedor.jpg" alt="Delegar tareas en el primer equipo de trabajo">
+  <figcaption class="img-caption">Ilustración: Redacción Vértice</figcaption>
+</figure>
+
+<article class="article-body">
+
+  <p>En las primeras etapas de un negocio, hacer de todo no es una debilidad: es casi una necesidad. El problema aparece después, cuando ese mismo hábito que permitió arrancar se convierte en el freno que impide crecer. Según datos citados por Harvard Business Review, el 58% de los fundadores tiene dificultades para soltar el control, y ese cuello de botella termina limitando al negocio entero, no solo al fundador.</p>
+
+  <h2>La señal de que llegó el momento</h2>
+
+  <p>Uno de los indicadores más claros de que es momento de delegar es sentirse sobrepasado de forma sostenida, no ocasional. Cuando el volumen de trabajo empieza a afectar la calidad de atención a los clientes, o cuando el fundador ya no tiene tiempo para pensar en la estrategia porque está atrapado en el día a día operativo, esa es la señal de que seguir haciendo todo personalmente ya no es sostenible.</p>
+
+  <h2>Elegir bien es la mitad del trabajo</h2>
+
+  <p>Delegar con éxito empieza antes de asignar la primera tarea: empieza en a quién elegís. Buscar personas con valores alineados al negocio, y no solo currículums impecables, marca una diferencia real en el resultado. No hace falta que la primera persona que sume a tu equipo sea experta en tu rubro específico; muchas veces alcanza con potencial genuino, motivación y la disposición a aprender.</p>
+
+  <div class="inline-img-wrap">
+    <img src="equipo-trabajo-confianza.jpg" alt="Construir un equipo de confianza">
+  </div>
+
+  <h2>Claridad, no solo instrucciones</h2>
+
+  <p>Decirle a alguien "hacé esto" sin explicar por qué importa o cómo encaja en el negocio es la receta perfecta para errores evitables. Delegar bien significa dar a tu equipo la visión completa: roles definidos, metas concretas, y la autonomía real para tomar decisiones dentro de ese marco, no solo una lista de tareas sueltas.</p>
+
+  <blockquote class="pull-quote">
+    "Controlar no se trata de estar constantemente encima; es tener una vista amplia sin necesidad de intervenir en cada detalle."
+  </blockquote>
+
+  <h2>Soltar con acompañamiento, no con abandono</h2>
+
+  <p>Hay dos extremos igual de riesgosos al delegar: microgestionar cada paso, o delegar y desentenderse por completo sin revisar nada. El punto medio funciona mejor: revisiones semanales breves, un informe corto al cierre de cada semana, o herramientas visuales simples de seguimiento. Esto te da visibilidad real sin necesidad de estar encima de cada tarea.</p>
+
+  <h2>Tolerar la imperfección inicial</h2>
+
+  <p>Al principio, es probable que las tareas delegadas no salgan exactamente como las harías vos mismo. Está bien. Enfocarse en el progreso, no en la perfección inmediata, es lo que permite que ese proceso de aprendizaje conjunto —tuyo y de tu equipo— realmente funcione con el tiempo. Retomar una tarea al primer signo de imperfección suele desmotivar más de lo que corrige.</p>
+
+  <p>Delegar no significa perder el control del negocio: significa asumir un rol más estratégico. Tu función deja de ser estar en cada detalle operativo, para pasar a definir la dirección, cultivar la cultura de trabajo, y dedicar tu tiempo a lo que realmente solo vos podés hacer por tu negocio.</p>
+
+</article>
+
+<div class="back-link-wrap">
+  <a href="index.html" class="back-link">← Volver a Vértice</a>
+</div>
+
+<footer>
+  &copy; 2026 Vértice — Revista de Negocios &amp; Estrategia
+</footer>
+
+</body>
+</html>

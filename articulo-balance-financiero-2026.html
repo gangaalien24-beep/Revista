@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cómo leer un balance financiero sin ser contador — Vértice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * , *::before, *::after { box-sizing: border-box; }
+
+  :root {
+    --navy:   #0D1B2A;
+    --ivory:  #F7F7F5;
+    --steel:  #8A99A8;
+    --indigo: #2B5BDB;
+    --ink:    #111111;
+    --rule:   #D6DAE0;
+    --gold:   #B8860B;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    background: var(--ivory);
+    line-height: 1.65;
+  }
+
+  .top-nav {
+    background: var(--navy);
+    padding: 18px 20px;
+  }
+
+  .top-nav a {
+    color: var(--ivory);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .article-header {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 20px 0 20px;
+  }
+
+  .article-category {
+    color: var(--indigo);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .article-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--navy);
+    margin: 14px 0 18px 0;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--steel);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .article-meta strong {
+    color: var(--ink);
+  }
+
+  .featured-img-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .featured-img-wrap img {
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .img-caption {
+    font-size: 13px;
+    color: var(--steel);
+    font-style: italic;
+    margin-top: 8px;
+  }
+
+  .article-body {
+    max-width: 720px;
+    margin: 36px auto;
+    padding: 0 20px;
+    font-size: 1.08rem;
+  }
+
+  .article-body p {
+    margin-bottom: 22px;
+  }
+
+  .article-body h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 8px;
+    display: inline-block;
+  }
+
+  .inline-img-wrap {
+    margin: 32px 0;
+  }
+
+  .inline-img-wrap img {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .pull-quote {
+    border-left: 4px solid var(--indigo);
+    padding: 6px 24px;
+    margin: 32px 0;
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--navy);
+  }
+
+  .back-link {
+    display: inline-block;
+    margin: 20px 0 60px 0;
+    color: var(--indigo);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .back-link-wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  footer {
+    background: var(--navy);
+    color: var(--steel);
+    text-align: center;
+    padding: 28px 20px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a href="index.html">← Vértice — Revista de Negocios</a>
+</nav>
+
+<header class="article-header">
+  <p class="article-category">Finanzas</p>
+  <h1 class="article-title">Cómo leer un balance financiero sin ser contador</h1>
+  <div class="article-meta">
+    <span><strong>Alien Ganga</strong></span>
+    <span>·</span>
+    <span>17 jul 2026</span>
+    <span>·</span>
+    <span>6 min lectura</span>
+  </div>
+</header>
+
+<figure class="featured-img-wrap">
+  <img src="balance-financiero-emprendedores.jpg" alt="Balance financiero para emprendedores">
+  <figcaption class="img-caption">Ilustración: Redacción Vértice</figcaption>
+</figure>
+
+<article class="article-body">
+
+  <p>Para muchos dueños de negocio, el balance es un documento que se firma, se archiva y se olvida hasta el próximo cierre. Es una lástima, porque ese mismo documento —bien leído— puede contarte con precisión si tu empresa está sana, si puede pagar sus deudas, y si estás generando ganancias reales o solo la ilusión de hacerlo. No hace falta un título de contador para entenderlo. Hace falta saber qué mirar.</p>
+
+  <h2>Tres bloques, una sola historia</h2>
+
+  <p>Todo balance se ordena en tres partes que, juntas, cuentan una sola historia: el <strong>activo</strong> (todo lo que tu empresa posee, desde el dinero en el banco hasta la maquinaria), el <strong>pasivo</strong> (todo lo que tu empresa debe, a bancos, proveedores o empleados), y el <strong>patrimonio neto</strong>, que es simplemente la diferencia entre ambos: lo que realmente te pertenece una vez descontadas las deudas.</p>
+
+  <p>Un detalle que pocos conocen: dentro del activo, los elementos se ordenan de menor a mayor liquidez. Es decir, cuanto más rápido se puede convertir algo en efectivo, más abajo aparece en la lista. El dinero en caja está primero; un edificio o una maquinaria, al final. Entender este orden te ayuda a distinguir de un vistazo cuánto de tu patrimonio está disponible ya mismo y cuánto está "atado" a bienes que tardarían en venderse.</p>
+
+  <div class="inline-img-wrap">
+    <img src="analisis-financiero-empresa.jpg" alt="Análisis financiero de una empresa">
+  </div>
+
+  <h2>El número que revela si podés pagar tus deudas</h2>
+
+  <p>Existe un cálculo simple que responde una de las preguntas más urgentes de cualquier negocio: ¿tengo con qué pagar lo que debo en el corto plazo? Se llama ratio de liquidez, y se obtiene dividiendo los activos corrientes (lo que podés convertir en efectivo pronto) entre los pasivos corrientes (las deudas que vencen pronto).</p>
+
+  <p>Por ejemplo: si tenés 200.000 en activos corrientes y 100.000 en deudas de corto plazo, tu ratio es 2. Eso es una posición sólida: tenés el doble de recursos disponibles que de deudas inmediatas. Pero si el resultado fuera 0,5, la lectura cambia por completo: significa que por cada peso de deuda que vence pronto, solo tenés 50 centavos disponibles. Ahí hay una señal de alerta que conviene atender antes de que se convierta en un problema real.</p>
+
+  <blockquote class="pull-quote">
+    "Aprender a leer un balance no es un ejercicio para contadores. Es convertir un mapa antiguo en un navegador que te muestra hacia dónde va tu negocio."
+  </blockquote>
+
+  <h2>El error más común: mirar solo la ganancia</h2>
+
+  <p>Cuando alguien recibe su balance, casi siempre va directo al resultado del ejercicio: la línea que dice si hubo ganancia o pérdida. Es comprensible, pero es también el error más frecuente. Un negocio puede mostrar ganancia en el papel y, al mismo tiempo, tener un patrimonio neto bajo o negativo, lo cual indica un riesgo financiero real que la simple "ganancia" no deja ver.</p>
+
+  <p>Por eso conviene mirar el balance como un conjunto, no como una sola cifra. Preguntate: ¿mi patrimonio neto viene creciendo con el tiempo, o se mantiene estancado? ¿Cuánto de mi empresa está financiado con recursos propios y cuánto con deuda? ¿Podría afrontar un imprevisto sin pedir un préstamo de urgencia?</p>
+
+  <h2>Convertir números en decisiones</h2>
+
+  <p>Leer un balance con regularidad —no solo al cierre del año— te permite anticipar problemas antes de que se vuelvan urgentes: renegociar con un proveedor, ajustar precios, o decidir si es buen momento para invertir en lugar de endeudarse. La clave no está en memorizar fórmulas contables, sino en entender qué historia cuentan esos números sobre tu negocio, y usarla para decidir con más criterio y menos intuición.</p>
+
+</article>
+
+<div class="back-link-wrap">
+  <a href="index.html" class="back-link">← Volver a Vértice</a>
+</div>
+
+<footer>
+  &copy; 2026 Vértice — Revista de Negocios &amp; Estrategia
+</footer>
+
+</body>
+</html>
